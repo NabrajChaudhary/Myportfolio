@@ -1,0 +1,176 @@
+/* This is the css for about section */
+
+.about_conh {
+    color: tomato;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.about_conh:before {
+    content: '';
+    height: 80px;
+    width: 8px;
+    background: tomato;
+    display: block;
+    margin-left: -17px;
+    position: absolute;
+}
+
+.about_con p {
+    margin-top: -12px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.img-fullwidth {
+    width: 100% !important;
+}
+
+.img-thumbnail {
+    padding: .25rem;
+    background-color: #edc9c9;
+    border: 3px solid tomato;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-pad {
+    font-size: 17px;
+    font-weight: 300;
+    strong {
+        color: tomato;
+        font-weight: 500;
+    }
+}
+
+
+/* this is the css section for Table bio data */
+
+.bio {
+    padding: 10px 5px;
+    ul {
+        list-style: none;
+        margin-bottom: 0rem !important;
+        li {
+            font-size: 17px;
+            font-weight: 500;
+            padding: 5px 0;
+            color: tomato;
+            border-bottom: 1px solid blue;
+            a {
+                text-decoration: none;
+                color: tomato;
+            }
+            span {
+                color: #000;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+
+/* This is the css for about section */
+
+
+/* Skills section starts here */
+
+.skill_con {
+    padding: 20px 15px;
+    h3 {
+        color: tomato;
+        font-size: 32px;
+        font-weight: 600;
+    }
+}
+
+
+/* This is the skill box section */
+
+.skill_s {
+    background: rgba(0, 0, 0, .05);
+    position: relative;
+    z-index: -999;
+}
+
+.s_con {
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.s_con h5 {
+    font-size: 25px;
+    color: tomato;
+    text-transform: capitalize;
+}
+
+.s_con h3 {
+    font-size: 35px;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+
+/* Skill box css */
+
+.c_box {
+    width: 100%;
+    background: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.skillBox {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.skillBox p {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.skillBox p:nth-child(2) {
+    float: right;
+    position: relative;
+    top: -33px;
+}
+
+.skill {
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid tomato;
+    border-radius: 2px;
+}
+
+.skill_level {
+    background: tomato;
+    width: 10 0%;
+    height: 10px;
+}
+
+
+/* Skill box css */
+
+.s_c_box {
+    padding: 14px;
+    margin-top: 60px;
+}
+
+.s_c_box h2 {
+    color: tomato;
+    font-size: 35px;
+}
+
+
+/* Skills section ends here */

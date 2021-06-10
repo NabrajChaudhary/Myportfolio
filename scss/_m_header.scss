@@ -1,0 +1,264 @@
+/* Css for landing section starts here */
+
+.m_page {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../img/bg.jpg);
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+/* This is the css for navigation  bar */
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    span {
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background: tomato;
+        display: block;
+        top: calc(50% - 1px);
+        left: calc(50% - 15px);
+        transition: 0.2s;
+    }
+}
+
+.menu span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.menu span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.menu.active span:nth-child(1) {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+.menu.active span:nth-child(3) {
+    transform: translateY(0px) rotate(45deg);
+}
+
+.menu.active span:nth-child(2) {
+    transform: translateX(-30px);
+    opacity: 0;
+}
+
+.menu-bar .menu-brand {
+    margin-left: 90px;
+    margin-top: 0;
+    font-family: "Marck Script", cursive;
+    a {
+        text-decoration: none;
+        color: tomato;
+        font-weight: bold;
+        font-size: 40px;
+    }
+}
+
+.menu-bar .s_icon {
+    display: none;
+}
+
+.menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.9);
+    transition: 1s;
+    transform: translateX(-100%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        float: right;
+        li {
+            list-style: none;
+            a {
+                line-height: 60px;
+                text-transform: uppercase;
+                color: tomato;
+                text-decoration: none;
+                padding: 0 20px;
+                display: block;
+                color: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                &:hover {
+                    background: tomato;
+                    color: #ffff !important;
+                }
+            }
+        }
+    }
+}
+
+.activea {
+    background: tomato;
+    color: #ffff !important;
+}
+
+.menu-bar.active {
+    transform: translateX(0%);
+}
+
+.menu-bar ul li:last-child a {
+    border-right: none;
+}
+
+@media (max-width: 768px) {
+    .menu-bar {
+        height: auto;
+        width: 75%;
+        display: inherit;
+        justify-content: unset;
+        .menu-brand {
+            display: block;
+            margin-top: 90px;
+            text-align: center;
+            margin-left: -20px;
+            a {
+                line-height: 40px;
+                font-size: 33px;
+            }
+        }
+        ul {
+            display: inherit;
+            float: none;
+            text-align: center;
+            width: 100%;
+            height: 50vh;
+            padding-top: 10px;
+            margin-top: 40px;
+        }
+        .s_icon {
+            display: flex;
+            justify-content: space-between;
+            transform: translateX(20%);
+        }
+    }
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .mov_arr {
+        position: absolute;
+        bottom: -11% !important;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 0px;
+        margin-top: 0px;
+    }
+}
+
+
+/* This is the css for navigation  bar */
+
+.l_intro {
+    height: 350px;
+    width: 350px;
+    background: rgba(0, 0, 0, 0.0);
+    margin: auto;
+    position: relative;
+}
+
+.l_con {
+    padding: 50px 5px 20px 5px;
+}
+
+.l_con h1 {
+    font-size: 56px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    span {
+        color: tomato !important;
+    }
+}
+
+.l_con h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    span {
+        color: tomato !important;
+        text-transform: uppercase;
+    }
+}
+
+
+/* This is the css for introduction part with image below navigation bar */
+
+
+/*This is the css for the arrow down button */
+
+.mov_arr {
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+.mov_arr span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 4px solid tomato;
+    border-right: 4px solid tomato;
+    transform: rotate(45deg);
+    margin: 0px;
+    animation: animate 2s infinite;
+}
+
+.mov_arr span:nth-child(1) {
+    animation-delay: -0.2s;
+}
+
+.mov_arr span:nth-child(2) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+}
+
+
+/*This is the css for the arrow down button */

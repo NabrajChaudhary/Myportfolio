@@ -1,0 +1,196 @@
+.contact {
+    background: linear-gradient(rgba(135, 206, 250, 0.5), rgba(135, 206, 250, 0.6)), url(../img/bg4.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: auto;
+}
+
+.contact_conh {
+    @extend .about_conh;
+}
+
+.contact_con p {
+    margin-top: -12px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/* Main css for contact section */
+
+.c_cont {
+    align-items: center;
+}
+
+.con_intr {
+    text-align: left;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.con_intr h4 {
+    font-size: 17px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: tomato;
+    font-weight: bold;
+    padding: 10px 5px;
+}
+
+.con_intr h4 span,
+a {
+    color: rgba(0, 0, 0, .70);
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 10px 5px;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: rgba(0, 0, 0, .70);
+    }
+}
+
+.c_cont ul {
+    list-style: none;
+    padding: 5px 0px;
+    li {
+        float: left;
+        padding: 5px 5px 5px 0;
+        a {
+            color: rgba(255, 0, 0, .5);
+            padding: 0 10px;
+            &:hover {
+                color: rgba(0, 255, 0, .5);
+            }
+        }
+    }
+}
+
+
+/* This is the css for contact me section */
+
+
+/* This is the section for contact form css */
+
+.contactForm {
+    padding: 0px;
+    background: #fff;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    resize: none;
+    border-bottom: 1px solid tomato;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+    pointer-events: none;
+    transition: 0.5s;
+    color: tomato;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: tomato;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    &:hover {
+        background: cornflowerblue;
+    }
+}
+
+
+/* This is the section for contact form css */
+
+
+/* Footer Section starts from here */
+
+.footer_sec {
+    background: rgba(0, 0, 0, .80);
+    padding: 10px 0;
+}
+
+.f_con {
+    margin-top: 15px;
+}
+
+.f_con p {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    a {
+        font-size: 17px;
+        color: tomato;
+        text-decoration: none;
+    }
+}
+
+
+/* Footer Section starts from here */
+
+.gotopbtn {
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    background: tomato;
+    bottom: 10px;
+    right: 20px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 25px;
+    color: #fff;
+    font-size: 18px;
+    &:hover {
+        background: tomato;
+        color: #fff;
+    }
+}
+
+.arr {
+    width: 35px;
+    height: 35px;
+    background: tomato !important;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    display: none;
+    padding-left: 8px;
+    padding-top: 3px;
+}
+
+.arr a {
+    color: #fff;
+}
